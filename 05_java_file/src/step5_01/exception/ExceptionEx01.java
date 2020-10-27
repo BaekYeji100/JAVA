@@ -2,7 +2,7 @@ package step5_01.exception;
 //import java.util.*;
 
 /*
-	 * 예외 ( Exception ) 처리
+	 * 예외 ( Exception ) 처리 
 	 * 
 	 * 심각한 오류를 발생시킬 수 있는 내용은
 	 * try, catch 구문안에 만들도록 강제한다..
