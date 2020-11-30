@@ -1,5 +1,4 @@
 package step9_02.score;
-
 import java.util.ArrayList;
 
 public class ScoreList {
@@ -23,9 +22,12 @@ public class ScoreList {
 		
 		for (int i=0 ; i<scoreList.size()-1 ; i++) {
 			for (int j=i+1 ; j<scoreList.size() ; j++) {
+				// 석차 지정 해주기위한 메서드
 				if (scoreList.get(i).getTotal() > scoreList.get(j).getTotal()) {
 					scoreList.get(j).setRank(scoreList.get(j).getRank() + 1);
 				}
+				
+				
 				else if (scoreList.get(i).getTotal() < scoreList.get(j).getTotal()) {
 					scoreList.get(i).setRank(scoreList.get(i).getRank() + 1);
 				}
@@ -46,13 +48,3 @@ public class ScoreList {
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-

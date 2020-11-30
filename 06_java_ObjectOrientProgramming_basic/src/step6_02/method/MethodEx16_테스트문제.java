@@ -25,7 +25,6 @@ class TicTacToe{
 	}
 	
 	
-	
 	// 게임 화면 출력
 	void showGame() {
 		
@@ -39,8 +38,6 @@ class TicTacToe{
 		System.out.println("==========");
 		
 	}
-	
-	
 	
 	
 	// 인덱스 선택

@@ -27,8 +27,6 @@ class NumberGame{
 		
 	}
 	
-	
-	
 	void showMenu() {
 		
 		System.out.println("1.좌로 이동");
@@ -36,8 +34,6 @@ class NumberGame{
 		System.out.println("3.종료하기");
 		
 	}
-	
-	
 	
 	void moveLeft() {
 		
@@ -51,7 +47,6 @@ class NumberGame{
 		}
 		
 	}
-	
 	
 	
 	void moveRight() {

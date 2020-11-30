@@ -12,8 +12,10 @@ public class ScoreTest {
 		scoreList.addScore(new ScoreVO("일지매", 85, 78, 92));
 		scoreList.addScore(new ScoreVO("이몽룡", 89, 58, 73));
 		
+		System.out.println(scoreList.toString());
 		System.out.println(scoreList);
-		
+
+	
 	}
 	
 }
