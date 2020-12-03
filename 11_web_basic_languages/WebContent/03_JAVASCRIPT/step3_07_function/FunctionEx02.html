@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>변수의 생명주기</title>
+<script>
+	
+	var data = "최초데이터"; // 함수 밖의 전역변수
+	document.write(data,"<br>");
+	
+	function func1() {
+		data = "fun1 수정";
+		document.write(data,"<br>");
+		
+		var funcData1 = "함수1안의 변수"; // 함수1의 지역변수
+		document.write(funcData1,"<br>");
+		//document.write(funcData2,"<br>");
+		
+	}
+	function func2() {
+		data = "fun2 수정";
+		document.write(data,"<br>");
+		
+		var funcData2 = "함수2안의 변수"; // 함수2의 지역변수
+		//document.write(funcData1,"<br>");
+		document.write(funcData2,"<br>");
+	}
+	
+	func1();
+	func2();
+	
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>
