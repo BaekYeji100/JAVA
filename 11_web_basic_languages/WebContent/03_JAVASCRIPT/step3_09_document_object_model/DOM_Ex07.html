@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>노드</title>
+</head>
+<body>
+
+	<h2>첫번째 단락</h2>
+	<div id="target1"></div>
+
+	<h2>두번째 단락</h2>
+	<div id="target2"></div>
+	
+	<button onclick="addText1()">추가1</button>
+	<button onclick="addText2()">추가2</button>
+	<button onclick="removeText()">삭제</button>
+
+	<script>
+	
+		var cnt1 = 1;
+		function addText1() {
+			var newNode = document.createTextNode(cnt1 + "동적으로 텍스트 추가"); // 노드 생성
+			document.getElementById("target1").appendChild(newNode);			 // 노드 추가
+			cnt1++;
+		}
+		
+		var cnt2 = 1;
+		function addText2() {
+			var pTag = document.createElement("p"); 							  // html  태그생성
+			var newNode = document.createTextNode(cnt2 + "동적으로 텍스트 추가"); // 노드 생성
+			
+			pTag.appendChild(newNode); // 태그와 텍스트를 연결
+			document.getElementById("target2").appendChild(pTag); // 노드에 추가
+			cnt2++;
+		}
+		function removeText() {
+			var node = document.getElementById("target2");
+			
+			node.removeChild(node.childNodes[node.childNodes.length-1]);
+			cnt2--;
+		}
+		
+	</script>
+</body>
+</html>
